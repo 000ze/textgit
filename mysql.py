@@ -1,7 +1,7 @@
 import pymysql
 def connectdb():
     print('连接到 mysql服务器...')
-    db=pymysql.connect('localhost','root','263312zx','TESTDB')
+    db=pymysql.connect('localhost','root','   ','TESTDB')
     print('连接上了...')
     return db
 def createtable(db):
