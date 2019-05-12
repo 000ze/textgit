@@ -1,5 +1,4 @@
-import os
-if os.path.exists('split_text.txt'):
+try:
      date=open('split_text.txt')
      for each_line in date:
         if each_line.find(':')!=-1:
@@ -9,5 +8,6 @@ if os.path.exists('split_text.txt'):
             print('said:',end=" ")
             print(line_spoken,end=" ")
      date.close()
-else :
-    print('Sorry,this file is not exist')
+except:
+    pass
+    print('Sorry,there is an error')
